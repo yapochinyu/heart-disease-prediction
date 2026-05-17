@@ -104,14 +104,22 @@
 ```bash
 git clone https://github.com/yapochinyu/heart-disease-prediction.git
 cd heart-disease-prediction
+```
+
 2. Создание окружения
+```powershell
 conda env create -f environment.yml
 conda activate heart-api
+```
 3. Запуск API
+```powershell
 uvicorn api.app:app --reload
+```
 4. Открыть документацию
-http://127.0.0.1:8000/docs
+```http://127.0.0.1:8000/docs```
+
 Пример запроса
+```JSON
 {
   "Age": 54,
   "Sex": "M",
@@ -125,22 +133,28 @@ http://127.0.0.1:8000/docs
   "Oldpeak": 1.0,
   "ST_Slope": "Up"
 }
+```
 Ответ API
+```JSON
 {
   "prediction": 1,
   "probability": 0.87
 }
-Важно
+```
+
+
+**Важно**
 Модель ожидает данные в том же формате, что и при обучении
 Все категориальные значения должны совпадать с обучающими
 Обработка данных встроена в pipeline
-Возможные улучшения
+
+**Возможные улучшения**
 - Добавление новых признаков.
 - Добавление тестов.
 - Добавление обработки единиц измерения в api.
 
 Источник данных
 
-- https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data
+```https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data```
 
-Проект выполнен в учебных и практических целях.
+**Проект выполнен в учебных и практических целях.**
