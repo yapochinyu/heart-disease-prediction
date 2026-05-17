@@ -81,7 +81,7 @@
 
 ## Структура проекта
 
-
+```
 │   heart-disease-prediction.ipynb
 │   heart.csv
 │   README.md
@@ -94,7 +94,7 @@
 │
 └───models
         RandomForest_pipeline.pkl
-
+```
 ---
 
 ## Установка и запуск
